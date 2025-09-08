@@ -1,0 +1,19 @@
+{
+  "name": "ott_e2e",
+  "version": "1.0.0",
+  "description": "E2E Test Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --headed ",
+    "test:login": "USERNAME=$USERNAME PASSWORD=$PASSWORD npx playwright test tests/login.setup.ts",
+    "headed": "npx playwright test --headed",
+    "sequential": "npx playwright test --workers=1",
+    "parallel": "npx playwright test"
+  },
+  "author": "Mohammad",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.3.1"
+  }
+}
